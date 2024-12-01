@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#board { /* ID board*/
+    display: grid; /*Layout em grade (Tabuleiro)*/
+    grid-template-columns: repeat(10, 30px); /*10 Colunas no tabuleiro, 30 px de largura*/
+    grid-gap: 5px;/*Espaço de 5px entre cada célula*/
+    margin: 20px auto;/*Margem acima e em baixo, centraliza o tabuleiro*/
+}
+
+.cell {/*estilo das células*/
+    width: 30px;/*Tamanho de cada célula*/
+    height: 30px;/**/
+    display: flex;/*Layout Flexível, par alinhar o conteúdo dentro da célula*/
+    align-items: center;/*Alinha o conteúdo tanto orizontal quanto vertical dentro da célula*/
+    justify-content: center;/**/
+    background-color: lightgray;/*Cor da célula*/
+    cursor: pointer;/*muda para mão*/
+    font-size: 14px;/**/
+    font-weight: bold;/**/
+}
+
+.cell.revealed {
+    background-color: lightblue;/*Muda a cor da célula quando ela é revelada*/
+}
+
+.cell.mine {
+    background-color: red;/*Muda a cor da célula quando a mina é revelada*/
+}
+
+button {
+    padding: 10px 20px;/**/
+    font-size: 16px;/*Define o tamanho da fonte do botão*/
+    cursor: pointer;/*Muda o cursor para mão*/
+    background-color: #4CAF50;/*Cor de fundo do botão*/
+    color: white;/*Cor de texto detro do botão*/
+    border: none;/*Borda*/
+    border-radius: 5px;/*Arredondamento*/
+}
+
+button:hover {
+    background-color: #45a049;/*Muda a cor do botão quando o mouse é passado*/
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: black;
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    transition: background-color 0.5s; /* Transição suave para a cor de fundo */
+    margin-top: 15px;
+    background-color: white;
+  }
+  
+  .button1:hover {
+    background-color: darkgray; /* Cor de fundo ao passar o mouse */ 
+  }
+
+
+  .button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: black;
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    transition: background-color 0.5s; /* Transição suave para a cor de fundo */
+    margin-top: 15px;
+    background-color: white;
+  }
+  
+  .button2:hover {
+    background-color: red; /* Cor de fundo ao passar o mouse */ 
+  }
+
+.button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: black;
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    transition: background-color 0.5s; /* Transição suave para a cor de fundo */
+    margin-top: 15px;
+    background-color: white;
+  }
+
+  
+  .button3:hover {
+    background-color: green; /* Cor de fundo ao passar o mouse */ 
+  }
